@@ -1,0 +1,202 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.animated-background{
+  background: linear-gradient(
+    to right, #833ab4,#fd1d1d,#fcb045
+  );
+  background-size: 400% 400%;
+  animation: animate-background 10s infinite ease-in-out;
+}
+@keyframes animate-background{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.home {
+  top: 100px;
+  position: relative;
+  margin: 30px auto;
+  padding: 20px 20px 20px;
+  width: 500px;
+  background: rgb(158, 153, 153);
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 50px 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+/* .signUp{
+  display: block;
+} */
+.home:before {
+  
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+}
+.signUp input[type=text] {
+  width: 278px;
+}
+.login input[type=text] {
+  width: 278px;
+}
+input{
+  left: -8px;
+  z-index: -1;
+  border-radius: 4px;
+  height: 30px;
+}
+.signUp >button{
+  width:150px;
+  height:40px;
+  border-radius: 5px;
+  background-color: rgb(94, 98, 98);
+  box-shadow: #282c34;
+  color: antiquewhite;
+  font-style: oblique;
+  font-size: large;
+}
+.login >button{
+  width:150px;
+  height:40px;
+  border-radius: 5px;
+  background-color: rgb(94, 98, 98);
+  box-shadow: #282c34;
+  color: antiquewhite;
+  font-style: oblique;
+  font-size: large;
+}
+.bu{
+  width:150px;
+  height:40px;
+  border-radius: 5px;
+  background-color: rgb(94, 98, 98);
+  box-shadow: #282c34;
+  color: antiquewhite;
+  font-style: oblique;
+  font-size: large;
+}
+.all{
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.showButton{
+  
+  width:450px;
+  height:80px;
+  border-radius: 5px;
+  background-color: rgb(94, 98, 98);
+  box-shadow: #282c34;
+  color: antiquewhite;
+  font-style: oblique;
+  font-size: large;
+}
+
+.addBook{
+  display: block;
+  position: relative;
+  margin: 30px auto;
+  padding: 20px 20px 20px;
+  width: 500px;
+  background: rgb(158, 153, 153);
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 50px 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.addBook input[type=text] {
+  width: 278px;
+}
+.editBook{
+  width:150px;
+  height:40px;
+  border-radius: 5px;
+  background-color: rgb(94, 98, 98);
+  box-shadow: #282c34;
+  color: antiquewhite;
+  font-style: oblique;
+  font-size: large;
+}
+.forPost{
+  width:150px;
+  height:40px;
+  border-radius: 5px;
+  background-color: rgb(94, 98, 98);
+  box-shadow: #282c34;
+  color: antiquewhite;
+  font-style: oblique;
+  font-size: large;
+}
+.post >input{
+  width: 400px;
+}
+.onepost{
+  /* padding: 5px; */
+  width:80px;
+  height:35px;
+  border-radius: 5px;
+  background-color: rgb(94, 98, 98);
+  box-shadow: #282c34;
+  color: antiquewhite;
+  font-style: oblique;
+  font-size: large;
+}
+
+.box{
+  position: relative;
+  margin: 30px auto;
+  padding: 20px 20px 20px;
+  width: 500px;
+  background: rgb(158, 153, 153);
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 80px 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
